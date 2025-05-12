@@ -136,7 +136,7 @@ def hirschberg(X, Y):
         return basic_alignment(X, Y)
 
     mid = len(X) // 2
-    
+
     #forward and reverse scores
     score_l = efficientAlignment(X[:mid], Y)
     score_r = efficientAlignment_rev(X[mid:], Y)
